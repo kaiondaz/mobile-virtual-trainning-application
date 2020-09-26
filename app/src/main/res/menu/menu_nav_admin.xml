@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title="home"
+        android:icon="@drawable/ic_home_black"/>
+
+    <item android:id="@+id/nav_users"
+        android:title="users"
+        android:icon="@drawable/ic_users_black"/>
+
+    <item
+        android:id="@+id/nav_coaches"
+        android:icon="@drawable/ic_users_black"
+        android:title="Coaches" />
+
+    <item
+        android:id="@+id/nav_nutritionists"
+        android:icon="@drawable/ic_users_black"
+        android:title="Nutritionists" />
+
+
+    <item
+        android:id="@+id/addUsers"
+        android:icon="@drawable/ic_adduser"
+        android:title="Add users" />
+
+
+
+</menu>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapp">
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/VTrainer"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <activity android:name=".noOrdersToDisplay"></activity>
+        <activity android:name=".SingleOrderDisplay" />
+        <activity android:name=".OrdersDisplay" />
+        <activity android:name=".Nav_Drawer.Nav_Drawer_activity" />
+        <activity android:name=".ui.Drawer_Activity" />
+        <activity android:name=".Shopping_Cart.ConfirmFinalOrderActivity" />
+        <activity android:name=".Shopping_Cart.Cart_Activity" />
+        <activity android:name=".Shopping_Cart.Product_Details" />
+        <activity android:name=".NutritionistProfileDetails" />
+        <activity android:name=".CoachProfileDetails" />
+        <activity android:name=".Client_profile_nutritionist" />
+        <activity android:name=".RegistrationWithGoogle" />
+        <activity android:name=".FreeTutorialVid" />
+        <activity android:name=".WeightTrackerPage" />
+        <activity android:name=".Weight_Input_Page" />
+        <activity android:name=".NutritionistProfile" />
+        <activity android:name=".WorkoutPlanClientDisplay" />
+        <activity android:name=".ClientWorkoutPlans" />
+        <activity android:name=".NutritionPlanClientDisplay" />
+        <activity android:name=".RegisterUsersAdmin" />
+        <activity android:name=".ClientNutritionPlans" />
+        <activity android:name=".ClientReportInputPage" />
+        <activity android:name=".Subscription_info_page" />
+        <activity android:name=".ProgressChart" />
+        <activity android:name=".DashboardActivityAdmin" />
+        <activity android:name=".Create_Nutrition_Plan" />
+        <activity android:name=".NutritionistClients" />
+        <activity android:name=".Display_Reviews" />
+        <activity android:name=".CoachClients" />
+        <activity android:name=".CoachProfile" />
+        <activity android:name=".DashboardActivityCoach" />
+        <activity android:name=".DashboardActivityNutritionist" />
+        <activity android:name=".Select_Workout_page" />
+        <activity android:name=".Workout_tutorial1" />
+        <activity android:name=".Create_Workouts" />
+        <activity android:name=".Supplements_Store" />
+        <activity
+            android:name=".Chat_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Update_details" />
+        <activity android:name=".User_details" />
+        <activity android:name=".DashboardActivityClient" />
+        <activity android:name=".Fragment_home" />
+        <activity android:name=".Payment_Page" />
+        <activity android:name=".Subscription" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Register_User_Type" />
+        <activity android:name=".Create_Reviews" />
+        <activity android:name=".PT_page" />
+        <activity android:name=".Models.Client" />
+        <activity android:name=".Client_profile_Coach" />
+        <activity android:name=".Registration" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

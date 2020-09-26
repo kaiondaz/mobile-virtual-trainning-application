@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutPlanClientDisplay"
+    android:background="@drawable/white">
+
+
+    <EditText
+        android:id="@+id/nutritionPlanName"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_round"
+        android:hint="Workout name "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edit_round"
+        android:hint="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutritionPlanName">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:visibility="visible">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/meal1"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round"
+                    android:backgroundTint="#000000"
+                    android:text="Exercise name "
+                    android:textColor="#FFFFFF"
+                    />
+
+                <TextView
+                    android:id="@+id/meal2"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round"
+                    android:backgroundTint="#000000"
+                    android:text="Repetitions"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/meal3"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round"
+                    android:backgroundTint="#000000"
+                    android:text="Sets"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round"
+                    android:backgroundTint="#000000"
+                    android:text="Add pic"
+                    android:textColor="#FFFFFF" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/exerciseNameRow1"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/repsRow1"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/setsRow1"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <ImageView
+                    android:id="@+id/picRow1"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/add_pic" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <EditText
+                    android:id="@+id/mealPlan1NameRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan2NameRow2"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan3NameRow2"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <ImageView
+                    android:id="@+id/picRow2"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/add_pic" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/mealPlan1NameRow3"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan2NameRow3"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan3NameRow3"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <ImageView
+                    android:id="@+id/picRow3"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/add_pic" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/mealPlan1NameRow4"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan2NameRow4"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan3NameRow4"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <ImageView
+                    android:id="@+id/picRow4"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/add_pic" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/mealPlan1NameRow5"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan2NameRow5"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <EditText
+                    android:id="@+id/mealPlan3NameRow5"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round" />
+
+                <ImageView
+                    android:id="@+id/picRow5"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/add_pic" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="126dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/workouttutorialspic">
+
+    </com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
